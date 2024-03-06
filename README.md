@@ -2,6 +2,7 @@ RETO TRES
 Reto #3
 A continuación estarán los pseudocódigos y diagramas de flujo para dos distintos problemas.
 1. Hallar los números primos hasta n:
+   
 función encontrarPrimos(n)
 -Pseudocódigo: 
    función encontrarPrimos(n)
@@ -20,11 +21,17 @@ función encontrarPrimos(n)
 fin función
 
 fin función
+
+
 Digrama de flujo: 
 [![](https://i.postimg.cc/rpS3mK7P/Captura-de-pantalla-2024-03-05-220220.png)](https://i.postimg.cc/rpS3mK7P/Captura-de-pantalla-2024-03-05-220220.png)
 
+
+
 2. Hallar raíces cuadradas (divisiones y restas)
 Pseudocódigo:
+
+
 función encontrarRaizCuadrada(n)
     resultado = 0
     odd = 1
@@ -35,4 +42,7 @@ función encontrarRaizCuadrada(n)
     fin mientras
     retornar resultado
 fin función
+
+
+Diagrama de flujo:
 [![](https://i.postimg.cc/BQ42vrbT/Captura-de-pantalla-2024-03-05-220925.png)](https://i.postimg.cc/BQ42vrbT/Captura-de-pantalla-2024-03-05-220925.png)
