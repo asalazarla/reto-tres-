@@ -19,8 +19,25 @@ función encontrarPrimos(n)
 fin función
 
 fin función
-Digrama de flujo: 
-[![](https://i.postimg.cc/rpS3mK7P/Captura-de-pantalla-2024-03-05-220220.png)](https://i.postimg.cc/rpS3mK7P/Captura-de-pantalla-2024-03-05-220220.png)
+Digrama de flujo:
+
+``` mermaid
+graph TD
+    A[Inicio] --> B[Establecer n]
+    B --> C{Para cada número i = 2 hasta n}
+    C -->|Para cada i| D{Para cada j = 2 hasta raíz cuadrada de i}
+    D --> E{Si i mod j == 0}
+    E -->|Verdadero| F[esPrimo = falso]
+    F --> G[Salir del bucle j]
+    E -->|Falso| H{Fin del bucle j}
+    D --> H
+    H --> I{Si esPrimo == verdadero}
+    I -->|Verdadero| J[Imprimir i]
+    I -->|Falso| K[Continuar con el siguiente i]
+    J --> L{Fin del bucle i}
+    K --> L
+    L --> M[Fin]
+```
 
 2. Hallar raíces cuadradas (divisiones y restas)
 Pseudocódigo:
@@ -34,4 +51,19 @@ función encontrarRaizCuadrada(n)
     fin mientras
     retornar resultado
 fin función
-[![](https://i.postimg.cc/BQ42vrbT/Captura-de-pantalla-2024-03-05-220925.png)](https://i.postimg.cc/BQ42vrbT/Captura-de-pantalla-2024-03-05-220925.png)
+
+Diagrama de flujo:
+
+``` mermaid
+graph TD
+    A[Inicio] --> B[Establecer n, resultado = 0, odd = 1]
+    B --> C{Mientras n >= odd}
+    C -->|Verdadero| D[Restar n = n - odd]
+    D --> E[Incrementar odd = odd + 2]
+    E --> F[Incrementar resultado = resultado + 1]
+    F --> C
+    C -->|Falso| G[Retornar resultado]
+    G --> H[Fin]
+```
+
+
